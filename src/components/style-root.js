@@ -33,8 +33,8 @@ class StyleRoot extends Component {
   render() {
     return (
       <div {...this.props}>
-        {this.props.children}
         <StyleSheet />
+        {this.props.children}
       </div>
     );
   }
