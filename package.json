@@ -1,6 +1,6 @@
 {
   "name": "6-21-2016-radium-publishr",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A set of tools to manage inline styles on React elements",
   "main": "lib/index.js",
   "repository": {
@@ -89,7 +89,9 @@
     "webpack-dev-server": "^1.9.0"
   },
   "publishr": {
-    "dependencies": ["^babel"],
+    "dependencies": [
+      "^babel"
+    ],
     "files": {
       ".npmignore": ".npmignore.publishr"
     }
