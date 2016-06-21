@@ -87,5 +87,11 @@
     "sinon-chai": "^2.8.0",
     "webpack": "^1.9.11",
     "webpack-dev-server": "^1.9.0"
+  },
+  "publishr": {
+    "dependencies": ["^babel"],
+    "files": {
+      ".npmignore": ".npmignore.publishr"
+    }
   }
 }
