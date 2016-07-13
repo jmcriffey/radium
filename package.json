@@ -1,6 +1,6 @@
 {
   "name": "7-13-2016-radium-publishr",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A set of tools to manage inline styles on React elements",
   "main": "lib/index.js",
   "repository": {
