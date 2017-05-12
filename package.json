@@ -24,8 +24,9 @@
     "fixlint": "npm run eslint -- --fix",
     "lint": "npm run eslint && npm run flow",
     "postinstall": "cd lib || npm run lib",
-    "prepublish": "npm run lib && npm run dist && not-in-publish || (npm test && npm run lint && npm run deps-fix)",
-    "postpublish": "npm run deps-restore",
+    "prepublish": "npm run lib && npm run dist && not-in-publish || (npm test && npm run lint)",
+    "postpublish": "publishr postpublish",
+    "postversion": "publishr postversion",
     "start": "./node_modules/.bin/babel-node examples/server.js",
     "test": "karma start",
     "test-coverage": "karma start karma.conf.coverage.js",
@@ -87,6 +88,7 @@
     "phantomjs-prebuilt": "^2.1.14",
     "prettier": "^0.22.0",
     "prop-types": "^15.5.8",
+    "publishr": "^0.0.26",
     "react": "^15.4.2",
     "react-addons-test-utils": "^15.4.2",
     "react-dom": "^15.4.2",
@@ -94,5 +96,13 @@
     "sinon-chai": "^2.8.0",
     "webpack": "^2.2.1",
     "webpack-dev-server": "^2.4.2"
+  },
+  "publishr": {
+    "dependencies": [
+      "^babel"
+    ],
+    "files": {
+      ".npmignore": ".npmignore.publishr"
+    }
   }
 }
